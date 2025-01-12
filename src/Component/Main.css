@@ -1,0 +1,33 @@
+.Maindiv{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+
+
+}
+.imagesection{
+    height: 40vh;
+    width: 40%;
+
+
+}
+.imagesection img{
+    height: 70vh;
+    width: 100%;
+    
+}
+.paragraphsection{
+    height: 70vh;
+    width: 60%;
+    color: black;
+    text-align: justify;
+    
+    
+    
+}
+.paragraphsection p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}

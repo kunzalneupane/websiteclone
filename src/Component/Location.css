@@ -1,0 +1,68 @@
+
+.flex-div{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    background-color: #20232e; 
+}
+
+
+.location{
+    height: 60vh;
+    width: 100%;
+    background-color: #20232e;
+}
+.location h4{
+    text-align: center;
+    color: #bf292a;
+    background-color: #20232e;
+
+}
+.Loc{
+    height: 60vh;
+    width: 30%;
+    margin-left: 20%;
+    background-color:#20232e ;
+    
+}
+.Loc h6{
+    
+    margin-top: 1%;
+    background-color: #3e4358;
+    height: 5vh;
+    width: 100%;
+    color: white;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.Loc h6:hover{
+    color: #bf292a;
+}
+.Locationsec{
+    height: 60vh;
+    width: 30%;
+
+    
+}
+.Locationsec h6{
+    margin-top: 1%;
+    background-color: #3e4358;
+    height: 5vh;
+    width: 100%;
+    color: white;
+    padding-left: 15px;
+    padding-top: 5px;
+
+}
+
+.Locationsec h6:hover{
+    color:#bf292a ;
+}
+.Logos{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #20232e;
+}

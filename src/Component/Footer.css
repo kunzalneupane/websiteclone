@@ -1,0 +1,11 @@
+.maindiv{
+    height: 7vh;
+    width: 100%;
+    background-color:#bf292a ;
+
+}
+.maindiv h5{
+    color: white;
+    margin-left: 10%;
+    margin-top: 3px;
+}

@@ -1,0 +1,26 @@
+.main{
+    background-color: #9e0105;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+}
+
+.left{
+    height: 7vh;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4px 0px 4px;
+}
+.left h1{
+    font-size: 1vw;
+    padding-right:1%;
+    color: white;
+}
+.right{
+    height: 7vh;
+    width: 80%;
+    display: flex;
+    
+}
