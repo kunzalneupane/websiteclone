@@ -1,11 +1,12 @@
 .maindiv{
     height: 7vh;
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
     background-color:#bf292a ;
-
+    border-radius: 7px;
 }
 .maindiv h5{
     color: white;
     margin-left: 10%;
-    margin-top: 3px;
+    padding-top: 3px;
 }

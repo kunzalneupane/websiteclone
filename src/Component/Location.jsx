@@ -29,9 +29,9 @@ const Location = () => {
             </ul>
           </div>
         </div>
-      </div>
-      <div className="Logos">
-        <img src="/Logos.webp" alt="the next certified logo" />
+        <div className="Logos">
+          <img src="/Logos.webp" alt="the next certified logo" />
+        </div>
       </div>
     </>
   );

@@ -1,20 +1,31 @@
-.imp{
-    height: 50vh;
-    width: 100%;
+.imp {
+    height: 70vh;
+    width: 95%;
+    margin-left: 2.5%;
     display: flex;
     justify-content: space-around;
     background-color: #20232e;
-    color: white;
+    border-radius: 7px;
 }
-.imp h2{
+
+.process, .scholarship, .support, .resources {
+    height: 65vh;
+    width: 23%;
+    margin-top: 1.52%;
+}
+
+.process h2, .scholarship h2, .support h2, .resources h2 {
     color: #bf292a;
-    padding-bottom: 2%;
-}
-.imp p:hover{
-color: #bf292a;
-cursor: pointer;
+    padding: 10px 0 10px 5px;
 }
 
+.process p, .scholarship p, .support p, .resources p {
+    font-size: 17px;
+    color: white;
+    padding: 0 0 3px 5px;
+}
 
-
-    
+.process p:hover, .scholarship p:hover, .support p:hover, .resources p:hover {
+    color: #bf292a;
+    cursor: pointer;
+}
