@@ -2,6 +2,7 @@
   text-decoration: none !important;
   font-size: 16px;
   color: #333;
+  
 }
 a{
   text-decoration: none;
@@ -24,8 +25,11 @@ a{
   
   .dropdown-menu li a {
     text-decoration: none !important;
-    font-size: 15px;
+    font-size: 14px;
     color: #333;
+    
+    
+    
   }
   
   .dropdown-menu a:hover {
@@ -37,6 +41,8 @@ a{
     width: 100%;
    display: flex;
    align-items: center;
+   background-color: #f2f2f2;
+   margin-left: 2.5%;
     
   }
  .logosection{

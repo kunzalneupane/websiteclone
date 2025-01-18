@@ -1,5 +1,6 @@
 import React from "react";
 import "./First.css";
+import { Link } from "react-router-dom";
 
 const First = () => {
   return (
@@ -17,11 +18,11 @@ const First = () => {
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="#PTE">PTE Preparation Classes</a>
+                    <a href="#PTE">PTE Preparation Classes</a> 
                   </li>
                   <li>
                     <a href="#IELTS">IELTS Preparation Classes</a>
-                  </li>
+                  </li> 
                   <li>
                     <a href="#SAT">SAT Preparation Classes</a>
                   </li>
@@ -48,8 +49,8 @@ const First = () => {
                 </ul>
               </li>
 
-              <li>
-                <a href="#about">About</a>
+              <li> 
+                <Link to="/Universities">Universities</Link>
               </li>
 
               <li class="dropdown">

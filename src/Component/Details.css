@@ -1,11 +1,13 @@
 .main{
-    background-color: #9e0105;
-    height: 7vh;
-    width: 95%;
+    background-color:#9e0105;
+    height: 10vh;
+    width: 100%;
     margin-left: 2.5%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .left{
@@ -18,7 +20,7 @@
     padding: 0px 4px 0px 4px;
 }
 .left h1{
-    font-size: 15px;
+    font-size: 20px;
     padding-right:1%;
     color: white;
 }
@@ -26,5 +28,18 @@
     height: 7vh;
     width: 80%;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
     
 }
+
+.right a{
+   padding-left: 2px;
+   display: inline-block;
+   
+}
+.right a:hover{
+    transform: scale(1.2); 
+}
+

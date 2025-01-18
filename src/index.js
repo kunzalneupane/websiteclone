@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import Details from './Component/Details';
 import First from './Component/First';
 import Second from './Component/Second';
-import Main from './Component/Main';
-import Mainsec from './Component/Mainsec';
-import Resource from './Component/Resource';
-import Location from './Component/Location';
+import Main from './Body/Main';
+import Mainsec from './Body/Mainsec';
+import Resource from './Resources/Resource';
+import Location from './Location/Location';
 import Footer from './Component/Footer';
+// import Preparation from './Preparation';
+// import Universities from './Universities';
 
 
 
@@ -28,6 +30,10 @@ root.render(
     <Resource/>
     <Location/>
     <Footer/>
+    {/* <Preparation/>
+    <Universities/> */}
+    
+
     
   
     

@@ -1,0 +1,285 @@
+var $ = jQuery;
+
+//Header top parent//Sticky Menu
+$('document').ready(function(){
+//$( " .tnp-subscription > form " ).append( "<span class='close_form'><i class='fa fa-window-close' aria-hidden='true'></i></span>" );  
+ 
+ var id = '#dialog';
+ 
+//Get the screen height and width
+var maskHeight = $(document).height();
+var maskWidth = $(window).width();
+ 
+//Set heigth and width to mask to fill up the whole screen
+$('#mask').css({'width':maskWidth,'height':maskHeight});
+
+//transition effect
+$('#mask').fadeIn(500); 
+$('#mask').fadeTo("slow",0.9); 
+ 
+//Get the window height and width
+var winH = $(window).height();
+var winW = $(window).width();
+              
+//Set the popup window to center
+$(id).css('top',  '10%');
+$(id).css('left', '17%');
+ $(id).css('right', '17%');
+
+//transition effect
+$(id).fadeIn(2000);  
+ 
+//if close button is clicked
+$('.window .close').click(function (e) {
+//Cancel the link behavior
+e.preventDefault();
+
+$('#mask').hide();
+$('.window').hide();
+});
+
+//if mask is clicked
+$('#mask').click(function () {
+$(this).hide();
+$('.window').hide();
+});
+
+$('#tclose').click(function () {
+ $('#mask').hide();
+$(this).hide();
+$('.window').hide(500);
+});
+
+
+ return false;
+});
+$(".cancel").on("click",function(){
+$(".overlay-main").hide();
+ 
+ 
+});
+$(window).load(function() {
+	
+	
+    $header = $(".main_header").outerHeight();
+    $top_bar = $(".top_bar").outerHeight();
+    $banner = $(".banner").outerHeight();
+    //$mnni = $(".bottom_bar_inner ").outerHeight();
+    //  if ($(this).scrollTop() > $banner) {
+    //        $('.bottom_bar').addClass('top_header_bg');
+    //    } else {
+    //        $('.bottom_bar').removeClass('top_header_bg');
+    //    }
+   // $(".banner_slider .item").css({ 'height': 'calc(100vh - ' + $header + 'px)' });
+    if ($(this).scrollTop() > $top_bar) {
+        $('.bottom_bar').addClass('bottom_bar_fixed');
+    } else {
+        $('.bottom_bar').removeClass('bottom_bar_fixed');
+    }
+$(window).scroll(function() {
+        if ($(this).scrollTop() > $top_bar) {
+            $('.bottom_bar').addClass('bottom_bar_fixed');
+        } else {
+            $('.bottom_bar').removeClass('bottom_bar_fixed');
+        }
+        //if ($(this).scrollTop() > $banner) {
+        //$('.bottom_bar').addClass('top_header_bg');
+        //  } else {
+        //      $('.bottom_bar').removeClass('top_header_bg');
+        //    }
+    });
+});
+
+
+//
+
+//bootstrap testimonial slider
+$('.carousel').carousel('pause')
+//$('#myCarousel').on('slide.bs.carousel', function () {
+//  alert("The paragraph was clicked.");
+//})
+//$(".globally_leading_img>figure:nth-child(4)").after("<div class='clearfix'></div>");
+$(".section_header, .about_us_title_conent>h2, .about_us_title_conent>p, .testimonial,.abroad_procedure h1,.updated_events .updated_events_list .heading-area,.home_blogs .heading-area").addClass("wow fadeIn");
+$(".about_us_logo, .our_alliances_inner ul li").addClass("wow zoomIn");
+
+$(".inner_photo_gallery .grid-item, .inner_news_events ul li,.inner_blogs ul li").addClass("wow zoomIn");
+$("section.next_achievements ul li:first-of-type, .about_us .about_us_image").addClass("wow slideInLeft");
+$(".abroad_procedure_inner ul li:nth-of-type(even)").addClass("wow slideInDown");
+$("section.next_achievements ul li:nth-of-type(2), .abroad_procedure_inner ul li:nth-of-type(odd), .home_blogs .card").addClass("wow slideInUp");
+$("section.next_achievements ul li:last-of-type, .contact_us_address,.about_us_content ul li").addClass("wow slideInRight");
+
+//newsletter toggle a class
+$(".newsletter_inner span.sign_up_button").click(function(){
+    $(".newsletter_inner").toggleClass("visible");
+});
+$(".newsletter_inner span.close_form").click(function(){
+    $(".newsletter_inner").toggleClass("visible");
+});
+//wow.js
+wow = new WOW({
+    boxClass: 'wow', // default
+    animateClass: 'animated', // default
+    offset: 300, // default
+    mobile: false, // default
+    live: true // default
+})
+wow.init();
+
+$(document).ready(function() {
+
+    //Equal Height
+    $('.equal_height').matchHeight();
+    $('.equal_height_inner').matchHeight();
+    $('.equal_height_event').matchHeight();
+    $('.equal_height_event_inner').matchHeight();
+    $('.updated_events_details').matchHeight();
+
+    // Css Menu
+    $("#cssmenu li ul").parent().addClass("has-sub");
+
+
+    });
+$(document).ready(
+    function() {
+        $("body").niceScroll({
+            zindex: 99999
+        });
+    }
+
+);
+
+//Scroll To Top
+$(document).ready(function() {
+
+    // Hide the toTop button when the page loads.
+    $("#toTop").css("display", "none");
+
+    // This function runs every time the user scrolls the page.
+    $(window).scroll(function() {
+
+        // Check weather the user has scrolled down (if "scrollTop()"" is more than 100)
+        if ($(window).scrollTop() > 100) {
+
+            // If it's more than or equal to 0, show the toTop button.
+            //console.log("is more");
+            $("#toTop").fadeIn("slow");
+        } else {
+            // If it's less than 0 (at the top), hide the toTop button.
+            //console.log("is less");
+            $("#toTop").fadeOut("slow");
+
+        }
+    });
+
+    // When the user clicks the toTop button, we want the page to scroll to the top.
+    $("#toTop").click(function() {
+
+        // Disable the default behaviour when a user clicks an empty anchor link.
+        // (The page jumps to the top instead of // animating)
+        event.preventDefault();
+
+        // Animate the scrolling motion.
+        $("html, body").animate({
+            scrollTop: 0
+        }, "slow");
+
+    });
+		
+		$( ".toc .tableofcontents" ).click(function() {
+			$(".toc ol").toggleClass("hide");
+			$(this).toggleClass("open");
+  });
+});
+
+//mansonary layout
+if($('.grid').length>0){
+
+				var $grid = $('.grid').masonry({
+						itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
+						percentPosition: true
+				});
+
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
+}
+
+
+/*$('html,body').animate({
+  scrollTop: $(window.location.hash).offset().top
+},3000);*/
+
+
+
+
+$(document).ready(function() {
+  //$('#accordion .panel-collapse:first').addClass('in');
+  //$('#accordion2 .panel-collapse:first').addClass('in');
+
+});
+
+var owl = $('.owl-carousel.university_logo_item');
+owl.owlCarousel({
+    items:7,
+    loop:true,
+    margin:0,
+    autoplay:true,
+    slideTransition: 'linear',
+    autoplayTimeout: 3000,
+    autoplaySpeed: 3500,
+    autoplayHoverPause:true,
+    nav:false,
+		dots: false,
+    responsiveClass:true,
+    responsive:{
+    0:{
+        items:3
+    },
+    600:{
+        items:5
+    },
+    1000:{
+        items:7
+    }
+  }
+});
+
+$(document).ready(function () {
+  // Check if #sticky-form exists in the page
+  if ($('#sticky-form').length > 0) {
+    // Get the initial position of the element
+    var initialOffset = $('#sticky-form').offset().top;
+
+    $(window).scroll(function () {
+      var windowTop = $(window).scrollTop();
+      var innerPageHeight = $(".inner_page").height();
+      var innerPageOffsetTop = $(".inner_page").offset().top;
+      var stickyFormHeight = $("#sticky-form").height();
+
+      if (initialOffset < windowTop && innerPageHeight + innerPageOffsetTop - stickyFormHeight > windowTop) {
+        $('#sticky-form').css({ 'position': 'fixed', 'top': '110px' });
+      } else {
+        $('#sticky-form').css({ 'position': 'relative', 'top': '0' });
+      }
+    });
+  }
+});
+
+
+$(document).ready(function() {
+  if ($(window).width() > 768) { // Execute only on desktop (adjust the width as needed)
+    if ($('.sticky_box').length > 0) {
+      var stickyTop = $('.sticky_box').offset().top;
+
+      $(window).scroll(function() {
+        var windowTop = $(window).scrollTop();
+        if (stickyTop < windowTop && $(".innerpage_single_page").height() + $(".innerpage_single_page").offset().top - $(".sticky_box").height() > windowTop) {
+          $('.sticky_box').css({'position': 'fixed', 'top': '115px'});
+        } else {
+          $('.sticky_box').css({'position': 'relative', 'top': '0'});
+        }
+      });
+    }
+  }
+});

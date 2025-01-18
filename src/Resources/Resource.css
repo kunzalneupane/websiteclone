@@ -1,0 +1,33 @@
+.imp {
+    height: 70vh;
+    width: 100%;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #20232e;
+    border-radius: 7px;
+}
+
+.process, .scholarship, .support, .resources {
+    height: 65vh;
+    width: 23%;
+    margin-top: 1.52%;
+    margin-left: 8%;
+    margin-right: 3%;
+}
+
+.process h2, .scholarship h2, .support h2, .resources h2 {
+    color: #bf292a;
+    padding: 10px 5px 10px 5px;
+}
+
+.process p, .scholarship p, .support p, .resources p {
+    font-size: 19px;
+    color: white;
+    padding: 0 0 5px 7px;
+}
+
+.process p:hover, .scholarship p:hover, .support p:hover, .resources p:hover {
+    color: #bf292a;
+    cursor: pointer;
+}

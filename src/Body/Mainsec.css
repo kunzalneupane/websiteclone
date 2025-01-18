@@ -1,0 +1,21 @@
+.mainsec{
+height: 26vh;
+width: 100%;
+background-color: #f9f9fa;
+margin-left: 5%;
+
+}
+.mainsec p{
+    height: 20vh;
+    width: 85%;
+    font-size: 19px;   
+    line-height: 2vw;
+    color: black;
+    text-align: justify;
+    margin-top: 5%;
+    margin-left: 8%;
+    
+    
+    
+    
+}

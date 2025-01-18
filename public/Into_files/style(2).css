@@ -1,0 +1,31 @@
+/*
+	Theme Name: THENEXT
+	Theme URI: http://shardait.com
+	Description: THENEXT WordPress Theme
+	Version: 1.4.3
+	Author: Sharda IT Service
+	Author URI: http://shardait.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}

@@ -1,0 +1,61 @@
+#mask {
+	  position: fixed !important;
+	  left: 0;
+	  top: 0;
+	  z-index: 9000;
+	  background-color: #000;
+	  display: none;
+	  width: 100% !important;
+	  height: 100% !important;
+	}
+
+	#boxes .window {
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+
+	  display: none;
+	  z-index: 9999;
+	  padding: 20px;
+	  border-radius: 15px;
+	  text-align: center;
+	}
+
+	#boxes #dialog {
+	 
+	  padding: 10px;
+	  background-color: #ffffff;
+	  font-family: 'Segoe UI Light', sans-serif;
+	  font-size: 15pt;
+	}
+	#tclose{
+	  position:absolute;
+	  background:red;
+	  color:white; 
+	  right:-15px;
+	  top:-15px;
+	  border-radius:50%;
+	  width:30px;
+	  height:30px;
+	  line-height:30px;
+	  text-align:center;
+	  font-size:12px;
+	  font-weight:bold;
+	  font-family:'Arial Black', Arial, sans-serif;
+	  font-color:black;
+	  cursor:pointer;
+	  box-shadow:0 0 10px 0 #000;
+	  
+	}
+
+	#popupfoot {
+	  font-size: 16pt;
+	  position: absolute;
+	  bottom: 100px;
+	  width: 250px;
+	  left: 200px;
+	}
+ 
+.procedure_heading_content h2{
+	height:65px;
+} 

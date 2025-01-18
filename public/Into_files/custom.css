@@ -1,0 +1,8 @@
+.red_btn {
+  background-color: #8f1317; /* Adjust the hex code for your desired red shade */
+  color: #fff; /* White text for better contrast */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px; /* Maintain rounded corners */
+  cursor: pointer; /* Indicate clickable behavior */
+}
